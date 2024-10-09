@@ -24,7 +24,25 @@ void prompt(){
  * @return Pointer to the newly added car in the list.
  */
 struct car * insert_to_list(struct car ** head, char plate[], int mileage, int return_date){
-    return NULL;
+    //Make a template car object
+    struct car* new_car = (struct car*)malloc(sizeof(struct car)); 
+    strcpy(new_car->plate, plate);
+    new_car->mileage = mileage;
+    new_car->return_date = return_date;
+    new_car->next = NULL;
+
+    if(*head == NULL){
+        *head = new_car; 
+    } else {
+        struct car* temp = *head;
+        while (temp->next != NULL) {
+            temp = temp->next;
+        }
+
+        temp->next = new_car;
+    }
+
+    return new_car;
 }
 
 /**
@@ -33,6 +51,11 @@ struct car * insert_to_list(struct car ** head, char plate[], int mileage, int r
  * This function prints out the car details, it should not print return date if it does not exist.
  */
 void print_list(struct car *head){
+    struct car* temp = head;
+    while (temp != NULL) {
+        printf("%s, %d, %d \n", temp->plate, temp->mileage, temp->return_date);
+        temp = temp->next;
+    }
     return;
 }
 
@@ -43,7 +66,19 @@ void print_list(struct car *head){
  * @return Boolean value indicating if the plate is found.
  */
 bool is_plate_in_list(struct car * head, char plate[]){
-    return true;
+    struct car* temp = head;
+    bool result = false;
+    do {
+        if (temp->plate == plate) {
+            result = true;
+            break;
+        } else {
+            temp = temp->next;
+        }
+
+    } while (temp != NULL);
+
+    return result;
 }
 
 /**
@@ -103,6 +138,19 @@ double profit_calculator(int initial_mileage, int final_mileage){
  * Writes the details of each car in the list to a file.
  */
 void write_list_to_file(char *filename, struct car *head){
+    FILE* newFile = fopen(filename, "w"); 
+    if (newFile == NULL) {
+        perror("Error occurred while opening the file");
+        return;
+    }
+
+    struct car* current = head; 
+    while (current != NULL) {
+        fprintf(newFile, "%s,%d,%d\n", current->plate, current->mileage, current->return_date);
+        current = current->next;
+    }
+
+    fclose(newFile);
     return;
 }
 
@@ -114,6 +162,35 @@ void write_list_to_file(char *filename, struct car *head){
  * Reads data from the file and inserts each car into the list.
  */
 void read_file_into_list(char *filename, struct car **head){
+    FILE* newFile = fopen(filename, "r");
+    if (newFile == NULL) {
+        perror("Error occurred while opening the file");
+        return;
+    }
+
+    // Buffer that holds a line
+    char line[200];
+    while (fgets(line, sizeof(line), newFile)) {
+        // Tokenize the line
+        char* plate = strtok(line, ",");
+        char* mileage = strtok(NULL, ",");
+        char* returnDate = strtok(NULL, ",");
+
+        // Check if tokens are valid
+        if (plate == NULL || mileage == NULL || returnDate == NULL) {
+            printf("Error: Invalid line format in file: %s\n", line);
+            continue;
+        }
+
+        // Convert data to int
+        int convertedMileage = atoi(mileage);
+        int convertedReturnDate = atoi(returnDate);
+
+        // Insert the new car into the list
+        insert_to_list(head, plate, convertedMileage, convertedReturnDate);
+    }
+
+    fclose(newFile);
     return;
 }
 

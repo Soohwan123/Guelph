@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/kauri/OneDrive/Desktop/Guelph/Courses/Fall 2024/F24_A2_Solution/finalA2",
-      "program": "c:/Users/kauri/OneDrive/Desktop/Guelph/Courses/Fall 2024/F24_A2_Solution/finalA2/build/Debug/outDebug",
+      "cwd": "c:/Users/Soohwan Kim/Desktop/Guelph/Guelph1st/CIS2520/Assignments/Ass2/A2_template/finalA2",
+      "program": "c:/Users/Soohwan Kim/Desktop/Guelph/Guelph1st/CIS2520/Assignments/Ass2/A2_template/finalA2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

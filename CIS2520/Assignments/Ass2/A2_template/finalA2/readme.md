@@ -1,9 +1,9 @@
 # CIS2520-F24-A2
 
 ## Student Information 
-Name : 
+Name : Soohwan Kim
 
-Student Number : 
+Student Number : 1349765
 
 ## Assignment Overview
 What is the assignment about?  

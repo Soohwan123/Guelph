@@ -1,46 +1,46 @@
-import java.util.Scanner;
-import java.util.Arrays;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Collections;
+import java.util.List;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
 
-public class Main{
-    public static void main(String[] args){
+public class Main {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        Set<String> deudboSet = new HashSet<String>();
+        Set<String> bodoSet = new HashSet<String>();
+        List<String> outputList = new ArrayList<>();
+
+        //개행
+        sc.nextLine();
+
+        for(int i = 0; i<n; i++){
+            deudboSet.add(sc.nextLine());
+        }
+
+        for(int i = 0; i<m; i++){
+            bodoSet.add(sc.nextLine());
+        }
+
+        for(String a : deudboSet){
+            if(bodoSet.contains(a)){
+                outputList.add(a);
+            }
+        }
+
+        Collections.sort(outputList);
+
+        System.out.println(outputList.size());
+
+        for (String string : outputList) {
+            System.out.println(string);
+        }
+
         
-        int num = sc.nextInt();
-        int generator = 0;
-        int sum = 0;
-        List<Integer> sumList = new ArrayList<>();
-
-        String numStr;
-        int length = Integer.toString(num).length();
-
-        for(int i=9*length;i>=length*1;i--){
-            sum = 0;
-            generator = num - i;
-            if(generator > 0){
-                numStr = Integer.toString(generator);
-
-                // 각 자리수를 더함
-                for (int j = 0; j < numStr.length(); j++) {
-                    sum += Character.getNumericValue(numStr.charAt(j));
-                }
-    
-                if(generator+sum == num){
-                    sumList.add(generator);
-                }
-            } 
-        }
-
-        Collections.sort(sumList);
-
-        if (!sumList.isEmpty()) {
-            System.out.println(sumList.get(0));
-        } else{
-            System.out.println(0);
-        }
-
         sc.close();
     }
 }
