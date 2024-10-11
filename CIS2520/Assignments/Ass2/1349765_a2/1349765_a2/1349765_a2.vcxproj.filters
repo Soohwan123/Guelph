@@ -21,9 +21,18 @@
     <ClCompile Include="q1_functions.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="q2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="q2_functions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="q1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="q2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

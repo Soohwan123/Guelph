@@ -21,9 +21,12 @@
   <ItemGroup>
     <ClCompile Include="q1.c" />
     <ClCompile Include="q1_functions.c" />
+    <ClCompile Include="q2.c" />
+    <ClCompile Include="q2_functions.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="q1.h" />
+    <ClInclude Include="q2.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="available.txt" />

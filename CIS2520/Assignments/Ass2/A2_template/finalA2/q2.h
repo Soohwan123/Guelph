@@ -1,3 +1,9 @@
+/*
+Name: Soohwan Kim
+Student ID: 1349765
+Assignment 2, Question 2
+Date : 10/10/2024
+*/
 #ifndef Q1_H
 #define Q1_H
 

@@ -14,6 +14,7 @@ Did you use any resources (for example book, notes etc) in this assignment?
 
 https://stackoverflow.com/questions/7021725/how-to-convert-a-string-to-integer-in-c
 https://www.tutorialspoint.com/isalnum-function-in-c-language
+https://sentry.io/answers/char-to-int-in-c-and-cpp/
 
 ## Implementation
 Is the assignment complete? If not, mention what part of the assignment is missing or incomplete.
