@@ -77,8 +77,9 @@ void print_list(struct car* head) {
  */
 bool is_plate_in_list(struct car* head, char plate[]) {
     struct car* temp = head;
+
     bool result = false;
-    
+
     // Iterate all the list until it finds the same plate
     do {
         if (strcmp(temp->plate, plate) == 0) {
@@ -101,6 +102,28 @@ bool is_plate_in_list(struct car* head, char plate[]) {
  * Swaps the plate, mileage, and return date of two cars.
  */
 void swap(struct car* a, struct car* b) {
+    if (a == NULL || b == NULL) {
+        return;
+    }
+
+    int temp_mileage;
+    int temp_return_date;
+    char temp_plate[7];
+
+    // Swap the data from two cars
+
+    temp_mileage = a->mileage;
+    a->mileage = b->mileage;
+    b->mileage = temp_mileage;
+
+    temp_return_date = a->return_date;
+    a->return_date = b->return_date;
+    b->return_date = temp_return_date;
+ 
+    strcpy(temp_plate, a->plate);
+    strcpy(a->plate, b->plate);
+    strcpy(b->plate, temp_plate);
+
     return;
 }
 
@@ -111,6 +134,39 @@ void swap(struct car* a, struct car* b) {
  * @param sort_by_return_date Boolean to sort by return date.
  */
 void sort_list(struct car** head, bool sort_by_mileage, bool sort_by_return_date) {
+    if (*head == NULL || (*head)->next == NULL) {
+        return;
+    }
+
+    bool is_swapped;
+    struct car *car_ptr;
+    struct car *last_sorted = NULL; 
+
+    do {
+        is_swapped = false;
+        car_ptr = *head;
+
+        while (car_ptr->next != last_sorted) {
+            // Sort by mileage
+            if (sort_by_mileage && car_ptr->mileage > car_ptr->next->mileage) {
+                swap(car_ptr, car_ptr->next);
+                is_swapped = true;
+            }
+
+            // Sort by return date
+            if (sort_by_return_date && car_ptr->return_date > car_ptr->next->return_date) {
+                swap(car_ptr, car_ptr->next);
+                is_swapped = true;
+            }
+
+            car_ptr = car_ptr->next;
+        }
+
+        last_sorted = car_ptr;
+
+    } while (is_swapped); 
+
+
     return;
 }
 
@@ -127,7 +183,7 @@ struct car* remove_car_from_list(struct car** head, char plate[]) {
     if (current != NULL && strcmp(current->plate, plate) == 0) {
         // Move head to the next node
         *head = current->next;
-        return current; 
+        return current;
     }
 
 
@@ -136,10 +192,10 @@ struct car* remove_car_from_list(struct car** head, char plate[]) {
             struct car* removed_car = current->next;
 
             // Remove the node from the list
-            current->next = removed_car->next; 
-            return removed_car; 
+            current->next = removed_car->next;
+            return removed_car;
         }
-        current = current->next; 
+        current = current->next;
     }
 
     return NULL;
@@ -192,10 +248,16 @@ double profit_calculator(int initial_mileage, int final_mileage) {
  * Writes the details of each car in the list to a file.
  */
 void write_list_to_file(char* filename, struct car* head) {
-    FILE* newFile = fopen(filename, "w");
+    FILE* newFile = fopen(filename, "r+");
+
+    // Create it if the file doesn't exist
     if (newFile == NULL) {
-        perror("Error occurred while opening the file");
-        return;
+        newFile = fopen(filename, "w+");
+        if (newFile == NULL) {
+            perror("Error occurred while creating the file");
+            return;
+        }
+        rewind(newFile);
     }
 
     struct car* current = head;
@@ -216,10 +278,16 @@ void write_list_to_file(char* filename, struct car* head) {
  * Reads data from the file and inserts each car into the list.
  */
 void read_file_into_list(char* filename, struct car** head) {
-    FILE* newFile = fopen(filename, "r");
+    FILE* newFile = fopen(filename, "r+");
+
+    // Create it if the file doesn't exist
     if (newFile == NULL) {
-        perror("Error occurred while opening the file");
-        return;
+        newFile = fopen(filename, "w+");
+        if (newFile == NULL) {
+            perror("Error occurred while creating the file");
+            return;
+        }
+        rewind(newFile);
     }
 
     // Buffer that holds a line
@@ -253,9 +321,9 @@ void read_file_into_list(char* filename, struct car** head) {
  * @param date Integer representing the date in YYMMDD format.
  */
 void date(int date) {
-    int year = date / 10000;          
-    int month = (date / 100) % 100;  
-    int day = date % 100;        
+    int year = date / 10000;
+    int month = (date / 100) % 100;
+    int day = date % 100;
 
     printf("%02d/%02d/%02d\n", year, month, day);
 
@@ -272,9 +340,9 @@ void free_list(struct car** head) {
     struct car* next = NULL;
 
     while (current != NULL) {
-        next = current->next; 
-        free(current);  
-        current = next;      
+        next = current->next;
+        free(current);
+        current = next;
     }
 
     *head = NULL;

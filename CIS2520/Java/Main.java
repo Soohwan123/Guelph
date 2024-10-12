@@ -1,15 +1,25 @@
-import java.io.*;
-import java.util.*;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int num1 = sc.nextInt();
+        int den1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        int den2 = sc.nextInt();
 
-        int A = Integer.parseInt(st.nextToken());
-        int B = Integer.parseInt(st.nextToken());
+        int new_den = LCM(den1, den2);
+        //통분
+        int a = ((new_den/den1)*num1);
+        int b = ((new_den/den2)*num2);
+        int new_num = a + b;
 
-        System.out.println(LCM(A, B));
+        int gcd = GCD(new_den, new_num);
+        new_den /= gcd;
+        new_num /= gcd;
+        System.out.println(new_num + " " + new_den);
+
+        sc.close();
     }
 
     private static int GCD(int a, int b){
@@ -17,10 +27,11 @@ public class Main {
         return GCD(b, a % b);
     }
 
-    // int 형 범위를 넘을 수 있다
-    private static long LCM(int a, int b){
+    // 최소공배수 ( 유클리드 호제법 )
+    private static int LCM(int a, int b){
         int gcd = GCD(a, b);
-        return (long) a * b / gcd;
+        return a * b / gcd;
     }
 
 }
+

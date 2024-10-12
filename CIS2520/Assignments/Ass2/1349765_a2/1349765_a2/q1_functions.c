@@ -1,3 +1,10 @@
+/*
+Name: Soohwan Kim
+Student ID: 1349765
+Assignment 2, Question 1
+Date : 10/10/2024
+*/
+
 #define _CRT_SECURE_NO_WARNINGS
 #include "q1.h"
 
@@ -32,6 +39,7 @@ struct car* insert_to_list(struct car** head, char plate[], int mileage, int ret
     new_car->return_date = return_date;
     new_car->next = NULL;
 
+    // If the list is empty, insert is as a head
     if (*head == NULL) {
         *head = new_car;
     }
@@ -69,7 +77,10 @@ void print_list(struct car* head) {
  */
 bool is_plate_in_list(struct car* head, char plate[]) {
     struct car* temp = head;
+
     bool result = false;
+
+    // Iterate all the list until it finds the same plate
     do {
         if (strcmp(temp->plate, plate) == 0) {
             result = true;
@@ -117,7 +128,7 @@ struct car* remove_car_from_list(struct car** head, char plate[]) {
     if (current != NULL && strcmp(current->plate, plate) == 0) {
         // Move head to the next node
         *head = current->next;
-        return current; 
+        return current;
     }
 
 
@@ -126,10 +137,10 @@ struct car* remove_car_from_list(struct car** head, char plate[]) {
             struct car* removed_car = current->next;
 
             // Remove the node from the list
-            current->next = removed_car->next; 
-            return removed_car; 
+            current->next = removed_car->next;
+            return removed_car;
         }
-        current = current->next; 
+        current = current->next;
     }
 
     return NULL;
@@ -182,10 +193,16 @@ double profit_calculator(int initial_mileage, int final_mileage) {
  * Writes the details of each car in the list to a file.
  */
 void write_list_to_file(char* filename, struct car* head) {
-    FILE* newFile = fopen(filename, "w");
+    FILE* newFile = fopen(filename, "r+");
+
+    // Create it if the file doesn't exist
     if (newFile == NULL) {
-        perror("Error occurred while opening the file");
-        return;
+        newFile = fopen(filename, "w+");
+        if (newFile == NULL) {
+            perror("Error occurred while creating the file");
+            return;
+        }
+        rewind(newFile);
     }
 
     struct car* current = head;
@@ -206,10 +223,16 @@ void write_list_to_file(char* filename, struct car* head) {
  * Reads data from the file and inserts each car into the list.
  */
 void read_file_into_list(char* filename, struct car** head) {
-    FILE* newFile = fopen(filename, "r");
+    FILE* newFile = fopen(filename, "r+");
+
+    // Create it if the file doesn't exist
     if (newFile == NULL) {
-        perror("Error occurred while opening the file");
-        return;
+        newFile = fopen(filename, "w+");
+        if (newFile == NULL) {
+            perror("Error occurred while creating the file");
+            return;
+        }
+        rewind(newFile);
     }
 
     // Buffer that holds a line
@@ -222,7 +245,7 @@ void read_file_into_list(char* filename, struct car** head) {
 
         // Check if tokens are valid
         if (plate == NULL || mileage == NULL || returnDate == NULL) {
-            printf("Error: Invalid line format in file: %s\n", line);
+            printf("Error occured due to invalid format in line");
             continue;
         }
 
@@ -243,9 +266,9 @@ void read_file_into_list(char* filename, struct car** head) {
  * @param date Integer representing the date in YYMMDD format.
  */
 void date(int date) {
-    int year = date / 10000;          
-    int month = (date / 100) % 100;  
-    int day = date % 100;        
+    int year = date / 10000;
+    int month = (date / 100) % 100;
+    int day = date % 100;
 
     printf("%02d/%02d/%02d\n", year, month, day);
 
@@ -262,9 +285,9 @@ void free_list(struct car** head) {
     struct car* next = NULL;
 
     while (current != NULL) {
-        next = current->next; 
-        free(current);  
-        current = next;      
+        next = current->next;
+        free(current);
+        current = next;
     }
 
     *head = NULL;
@@ -276,7 +299,7 @@ void free_list(struct car** head) {
 /**
  * Checks the validity of the return date format
  * @param date Integer representing the date.
- * returns true or false
+ * @return boolean represents the validity of the return date format.
  */
 bool date_validity_check(int date) {
     int year = date / 10000;

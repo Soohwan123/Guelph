@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|solutionrelative:q1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|solutionrelative:q1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|solutionrelative:q2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q1_functions.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|solutionrelative:q1_functions.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\CIS2520-F24-A2.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|solutionrelative:CIS2520-F24-A2.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
@@ -15,14 +31,6 @@
       "RelativeMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|solutionrelative:repair.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q2.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|solutionrelative:q2.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q2_functions.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|solutionrelative:q2_functions.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\testCaseQ2.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|solutionrelative:testCaseQ2.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -31,24 +39,8 @@
       "RelativeMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|solutionrelative:rented.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|solutionrelative:q1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|solutionrelative:q2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q1_functions.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|solutionrelative:q1_functions.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\available.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|solutionrelative:available.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2EB910BD-F02F-4C1F-9367-713D4A6F446A}|1349765_a2.vcxproj|solutionrelative:q1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,50 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "q2_functions.c",
-              "DocumentMoniker": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q2_functions.c",
-              "RelativeDocumentMoniker": "q2_functions.c",
-              "ToolTip": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q2_functions.c",
-              "RelativeToolTip": "q2_functions.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAABuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-10-10T16:49:39.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "q2.c",
-              "DocumentMoniker": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q2.c",
-              "RelativeDocumentMoniker": "q2.c",
-              "ToolTip": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q2.c",
-              "RelativeToolTip": "q2.c",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAAAEIAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-10-10T16:49:30.519Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "testCaseQ2.txt",
-              "DocumentMoniker": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\testCaseQ2.txt",
-              "RelativeDocumentMoniker": "testCaseQ2.txt",
-              "ToolTip": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\testCaseQ2.txt",
-              "RelativeToolTip": "testCaseQ2.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-08T19:05:46.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "readme.md",
               "DocumentMoniker": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\readme.md",
               "RelativeDocumentMoniker": "readme.md",
@@ -109,37 +62,37 @@
               "RelativeToolTip": "readme.md",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-10-06T18:55:55.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T18:55:55.494Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "q1_functions.c",
               "DocumentMoniker": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q1_functions.c",
               "RelativeDocumentMoniker": "q1_functions.c",
               "ToolTip": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q1_functions.c",
               "RelativeToolTip": "q1_functions.c",
-              "ViewState": "AgIAAMkAAAAAAAAAAAAAAPMAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-10-06T18:16:24.9Z"
+              "WhenOpened": "2024-10-06T18:16:24.9Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "q1.c",
               "DocumentMoniker": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q1.c",
               "RelativeDocumentMoniker": "q1.c",
               "ToolTip": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q1.c",
               "RelativeToolTip": "q1.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAEYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-10-06T18:15:25.866Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "repair.txt",
               "DocumentMoniker": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\repair.txt",
               "RelativeDocumentMoniker": "repair.txt",
@@ -147,12 +100,11 @@
               "RelativeToolTip": "repair.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-08T19:05:48.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T19:05:48.796Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "CIS2520-F24-A2.md",
               "DocumentMoniker": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\CIS2520-F24-A2.md",
               "RelativeDocumentMoniker": "CIS2520-F24-A2.md",
@@ -165,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "rented.txt",
               "DocumentMoniker": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\rented.txt",
               "RelativeDocumentMoniker": "rented.txt",
@@ -173,12 +125,11 @@
               "RelativeToolTip": "rented.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-08T19:05:19.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T19:05:19.509Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "q2.h",
               "DocumentMoniker": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q2.h",
               "RelativeDocumentMoniker": "q2.h",
@@ -191,7 +142,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
+              "Title": "q1.h",
+              "DocumentMoniker": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q1.h",
+              "RelativeDocumentMoniker": "q1.h",
+              "ToolTip": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q1.h",
+              "RelativeToolTip": "q1.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-06T18:15:51.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "testCaseQ2.txt",
+              "DocumentMoniker": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\testCaseQ2.txt",
+              "RelativeDocumentMoniker": "testCaseQ2.txt",
+              "ToolTip": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\testCaseQ2.txt",
+              "RelativeToolTip": "testCaseQ2.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-08T19:05:46.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "available.txt",
               "DocumentMoniker": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\available.txt",
               "RelativeDocumentMoniker": "available.txt",
@@ -200,18 +176,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-10-08T19:05:50.468Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "q1.h",
-              "DocumentMoniker": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q1.h",
-              "RelativeDocumentMoniker": "q1.h",
-              "ToolTip": "C:\\Users\\Soohwan Kim\\Desktop\\Guelph\\Guelph1st\\CIS2520\\Assignments\\Ass2\\1349765_a2\\1349765_a2\\q1.h",
-              "RelativeToolTip": "q1.h",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-06T18:15:51.234Z"
             }
           ]
         }
