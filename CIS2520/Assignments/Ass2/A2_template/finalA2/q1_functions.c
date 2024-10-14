@@ -5,7 +5,6 @@ Assignment 2, Question 1
 Date : 10/10/2024
 */
 
-#define _CRT_SECURE_NO_WARNINGS
 #include "q1.h"
 
 
