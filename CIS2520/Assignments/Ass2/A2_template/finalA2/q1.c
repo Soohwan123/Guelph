@@ -18,10 +18,12 @@ int main() {
     struct car* rented_head = NULL;
     struct car* repair_head = NULL;
 
+    //Read the text files first
     read_file_into_list("available.txt", &available_head);
     read_file_into_list("rented.txt", &rented_head);
     read_file_into_list("repair.txt", &repair_head);
 
+    //Sort available list and rented list according to the requirements
     sort_list(&available_head, true, false);
     sort_list(&rented_head, false, true);
 

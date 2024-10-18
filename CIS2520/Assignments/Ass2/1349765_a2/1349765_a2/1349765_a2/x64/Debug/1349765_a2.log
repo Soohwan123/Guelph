@@ -1,8 +1,0 @@
-﻿  q1.c
-C:\Users\Soohwan Kim\Desktop\Guelph\Guelph1st\CIS2520\Assignments\Ass2\1349765_a2\1349765_a2\q1.c(41,22): warning C4013: 'isdigit' undefined; assuming extern returning int
-C:\Users\Soohwan Kim\Desktop\Guelph\Guelph1st\CIS2520\Assignments\Ass2\1349765_a2\1349765_a2\q1.c(84,26): warning C4013: 'isalnum' undefined; assuming extern returning int
-C:\Users\Soohwan Kim\Desktop\Guelph\Guelph1st\CIS2520\Assignments\Ass2\1349765_a2\1349765_a2\q1.c(75,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Soohwan Kim\Desktop\Guelph\Guelph1st\CIS2520\Assignments\Ass2\1349765_a2\1349765_a2\q1.c(141,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Soohwan Kim\Desktop\Guelph\Guelph1st\CIS2520\Assignments\Ass2\1349765_a2\1349765_a2\q1.c(219,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Soohwan Kim\Desktop\Guelph\Guelph1st\CIS2520\Assignments\Ass2\1349765_a2\1349765_a2\q1.c(293,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  1349765_a2.vcxproj -> C:\Users\Soohwan Kim\Desktop\Guelph\Guelph1st\CIS2520\Assignments\Ass2\1349765_a2\1349765_a2\x64\Debug\1349765_a2.exe
