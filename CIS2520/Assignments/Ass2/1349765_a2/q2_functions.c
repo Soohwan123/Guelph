@@ -60,5 +60,7 @@ void print(Operand* stack) {
         }
         current = current->next;
     }
+
+    free(current);
     return;
 }

@@ -14,14 +14,15 @@ Date : 10/10/2024
 int main(int argc, char** argv) {
     // Pointer to the stack
     Operand* stack = NULL;
+    // Operands have to be 1 more than operators so count this to validate the input
+    int operand_count = 0;
+    int operator_count = 0;
 
     // Check if the arguments are valid
     if (argc != 2) {
         printf("Error occured during execution(Incorrect Input).");
         return 1;
     }
-
-    printf(argv[1]);
 
     // Loop through the second command line argument, containing the operands and the numbers
     for (int i = 0; i < strlen(argv[1]); ++i) {
@@ -32,12 +33,21 @@ int main(int argc, char** argv) {
             // Convert char to double
             double value = ch - '0';
             push(&stack, value); 
+            operand_count++;
         }
         else if (stack == NULL || stack->next == NULL) {
-            printf("Not enough values in expression.\n");
+            printf("Error - Not enough values in expression.\n");
             return 1;
         }
         else {
+            operator_count++;
+
+            // Check if there are enough operands for the operation
+            if (operand_count < 2) {
+                printf("Error - Not enough operands for operator '%c'.\n", ch);
+                return 1;
+            }
+
             double right = pop(&stack);
             double left = pop(&stack);
             double result;
@@ -54,7 +64,7 @@ int main(int argc, char** argv) {
                     break;
                 case '/':
                     if (right == 0) {
-                        printf("You can't divide by zero.\n");
+                        printf("Error - You can't divide by zero.\n");
                         return 1;
                     }
                     else {
@@ -63,7 +73,7 @@ int main(int argc, char** argv) {
 
                     break;
                 default:
-                    printf("'%c' is an invalid character.\n", ch);
+                    printf("Error - '%c' is an invalid character.\n", ch);
                     return 1;
             }
 
@@ -71,9 +81,17 @@ int main(int argc, char** argv) {
         }
     }
 
+    // Validating the notation
+    if (operand_count - operator_count != 1) {
+        printf("Error - Invalid postfix expression.\n");
+        return 1;
+    }
 
     // Print the last value
+    printf(argv[1]);
     print(stack);
+    // free the memory of stack
+    free(stack);
 
     return 0;
 }

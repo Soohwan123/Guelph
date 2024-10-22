@@ -202,6 +202,7 @@ int main() {
                 printf("Money charged : $%.2f\n\n", profit_calculator(rented_car->mileage, mileage));
                 printf("Car %s returned to the available list from the rented car list successfully!\n\n", plateNumber);
                 sort_list(&available_head, true, false);
+                free(rented_car);
                 break;
             }
 
@@ -276,6 +277,7 @@ int main() {
 
                 printf("Money charged : $%.2f\n\n", profit_calculator(rented_car->mileage, mileage));
                 printf("Car %s returned to the repair list from the rented car list successfully!\n\n", plateNumber);
+                free(rented_car);
                 break;
             }
 
@@ -329,6 +331,7 @@ int main() {
                 insert_to_list(&available_head, plateNumber, repaired_car->mileage, -1);
                 sort_list(&available_head, true, false);
                 printf("Car %s added to the available car list from the repaired car list successfully!\n\n", plateNumber);
+                free(repaired_car);
                 break;
             }
 
@@ -379,6 +382,7 @@ int main() {
                 printf("Car %s has been rented successfully!\n", available_car->plate);
                 printf("Car %s added to the rented car list from the available car list successfully!\n\n", available_car->plate);
 
+                free(available_car);
                 break;
             }
 
